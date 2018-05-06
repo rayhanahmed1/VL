@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+    <title>Visualizing London</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+    <!--Nav Bar-->
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="temperature.html">Temperature</a></li>
+                        <li><a href="pollution.html">Pollution</a></li>
+                        <li><a href="diversity.html">Diversity</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+    </div>
+
+    <!--Full screen background -->
+
+    <section class="intro">
+        <div class="inner">
+            <div class="content">
+                <h1>Visualizing London</h1>
+                <a class="btn" href="#welcome">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Welcome section-->
+    <div class="welcome text-center" id=welcome>
+        <h3><span style="text-decoration: underline;"><strong><em>Representing the Capital&rsquo;s environmental and social data as interactive graphical visuals.</em></strong></span></h3>
+
+
+        <p style="text-align: center;"><strong>What is Visualizing London?</strong></p>
+        <p style="text-align: justify;">Visualizing London is a website which illustrates a variety of London&rsquo;s environmental and social data as interactive maps and diagrams.</p>
+        <p style="text-align: justify;">&nbsp;</p>
+        <p style="text-align: center;"><strong>Why London? Why Visualize?</strong></p>
+        <p style="text-align: justify;">Home to more than 270 nationalities and 300 languages, London is one of the most multicultural cities on the planet. These numbers produce even more numbers, or in this case&hellip;data, and quite a lot of it. Along with environmental factors such as pollution (which is a huge public health concern in London) there are thousands of datasets openly available, which go by unnoticed. Probably because in their raw format as text and numbers, they have no particular meaning to users. By displaying these datasets as interactive visuals, it will help users understand the significance of that data.</p>
+        <p style="text-align: justify;">&nbsp;</p>
+        <p style="text-align: center;"><strong>Who is Visualizing London for?</strong></p>
+        <p style="text-align: justify;">Not just aimed towards Londoners, this website will benefit anyone who is interested in environmental and social trends. As an interactive platform, users will be able to learn about different environmental factors which are affecting their day to day lives and also compare the statistics of London boroughs.</p>
+        <p>&nbsp;</p>
+
+
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="temperature.html"><img src="img/iconTemp.png" id="icon"></a>
+                <h4>Temperature</h4>
+            </div>
+            <div class="col-sm-4">
+                <a href="pollution.html"><img src="img/iconPol.png" id="icon"></a>
+                <h4>Pollution</h4>
+            </div>
+            <div class="col-sm-4">
+                <a href="diversity.html"><img src="img/iconDiversity.png" id="icon"></a>
+                <h4>Diversity</h4>
+
+            </div>
+        </div>
+
+
+
+
+
+        <script type="text/javascript">
+            //Menu toggle-button 
+
+            $(document).ready(function () {
+                $(".menu-icon").on("click", function () {
+                    $("nav ul").toggleClass("showing");
+                });
+
+            });
+
+            //fixed scrolling effect
+
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                } else {
+                    $('nav').removeClass('black');
+                }
+
+            })
+
+            //SMOOTH SCROLL
+
+            $(function () {
+                $('a[href*=#]:not([href=#])').click(function () {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+
+
+
+
+</body>
+
+<footer>
+    <h6 style="font-size:10px;">The map visualizations created for this website use copyright boundaries, This is: "Contains National Statistics data © Crown copyright and database right [2015]" and "Contains Ordnance Survey data © Crown copyright and database right [2015]</h6>
+</footer>
+
+</html>

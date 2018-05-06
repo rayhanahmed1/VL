@@ -1,0 +1,164 @@
+<html lang="en">
+
+<head>
+    <title>Temperature</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--- nav bar-->
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="temperature.html">Temperature</a></li>
+                        <li><a href="pollution.html">Pollution</a></li>
+                        <li><a href="diversity.html">Diversity</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+    </div>
+
+    <div class="bgTemp">
+        <div class="inner">
+            <div class="content">
+                <h1>Temperature</h1>
+                <a href="#welcome">
+                    <button class="btn1"><i class="fa fa-angle-double-down"></i></button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="otherVis text-center" id=welcome>
+        <h1>Temperature</h1>
+        <div class='tableauPlaceholder' id='viz1523812163508' style='position: relative'>
+            <noscript>
+                <a href='#'><img alt='LONDON: Average daily temperature (1960-2016) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonTemperature&#47;LondonDailyMonthlyTemp_&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='LondonTemperature&#47;LondonDailyMonthlyTemp_' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonTemperature&#47;LondonDailyMonthlyTemp_&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1523812163508');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '827px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+        <h6>Illustrated as a calendar heat map, the first visual gives an average daily temperature for London from the period 1960 to 2016. Visually for all years, quarter 2 and 3 (specifically May to June) can be seen as the warmest months. January and December are distinctly lighter, therefore colder, compared to the rest of the year. During this time:
+            
+
+<li>the coldest temperature recorded was on the 12<sup>th</sup> Jan 1987 at -6.92&deg;C</li>
+<li>the hottest temperature recorded was on the 10<sup>th</sup> August 2003 at 28.82&deg;C</li>
+    
+Next to the calendar is another heat map, this time a monthly average is used to compare the temperature between months and years. June and July clearly stand out from the rest of the year as the hottest months, and January being the coldest.</h6>
+
+        <div class='tableauPlaceholder' id='viz1523813248433' style='position: relative'>
+            <noscript>
+                <a href='#'><img alt='London: Yearly Temp ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonTemperatureYearly&#47;LondonYearlyTemp&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='LondonTemperatureYearly&#47;LondonYearlyTemp' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='no' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonTemperatureYearly&#47;LondonYearlyTemp&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1523813248433');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '900px';
+            vizElement.style.height = '377px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+
+
+        <h6>The second visual is a line graph which shows an annual average temperature; calculated using the same dataset. The trend line shows a positive correlation, where there is a gradual temperature rise over the 56-year period. 1961-1962 saw the sharpest drop of 1.68°C (-15%) The late 1980s saw the greatest temperature rise of 2°C (20% increase from 1986 to 1989).
+1963 having the lowest average temperature of: 9.67°C and 2014 having the highest, at: 12.86°C, a difference of: 3.19°C
+</h6>
+        <a class="btn2" href="https://www.metoffice.gov.uk/climate/uk/data/ukcp09/datasets" target="_blank">DATA SOURCE</a>
+
+
+        <script type="text/javascript">
+            //Menu toggle-button 
+
+            $(document).ready(function () {
+                $(".menu-icon").on("click", function () {
+                    $("nav ul").toggleClass("showing");
+                });
+
+            });
+
+            //fixed scrolling effect
+
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                } else {
+                    $('nav').removeClass('black');
+                }
+
+            })
+
+            //SMOOTH SCROLL
+
+            $(function () {
+                $('a[href*=#]:not([href=#])').click(function () {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+
+
+</body>
+
+</html>

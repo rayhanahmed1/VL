@@ -1,0 +1,291 @@
+<html lang="en">
+
+<head>
+    <title>Pollution</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--- nav bar-->
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temperature.html">Temperature</a></li>
+                    <li><a href="pollution.html">Pollution</a></li>
+                    <li><a href="diversity.html">Diversity</a></li>
+                </ul>
+    </div>
+
+    </nav>
+    </header>
+    </div>
+
+    <div class="bgPol">
+        <div class="inner">
+            <div class="content">
+                <h1>Pollution</h1>
+                <a href="#welcome">
+                    <button class="btn1"><i class="fa fa-angle-double-down"></i></button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="otherVis text-center" id=welcome>
+        <h1>Pollutants</h1>
+        <div class='tableauPlaceholder' id='viz1523815488665' style='position: relative'>
+            <noscript>
+                <a href='#'><img alt='LONDON: Pollutant Levels from 2008-2017 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonPollutants&#47;LONDONPollutantLevelsfrom2008-2018&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='LondonPollutants&#47;LONDONPollutantLevelsfrom2008-2018' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonPollutants&#47;LONDONPollutantLevelsfrom2008-2018&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='filter' value='publish=yes' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1523815488665');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '477px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+        <h6>This line graph shows 5 different pollutants (Nitrogen dioxide, PM2.5 Particulate, PM10 Particulate, Ozone and Sulphur Dioxide) and their annual average levels (measured in micrograms per cubic meter) from 2008 to 2017. Levels of NO2 and Ozone remain far higher than then rest of the pollutants and also have the highest fluctuation rates. Using the air quality index which is graded in bands between 1 to 10, all pollutant levels, remain between 1 and 3 in the LOW band. Also given, is the percentage change after the 9-year period. While levels of PM2.5 and SO2 have had a percentage increase, the rest of the pollutants see a decrease in levels.</h6>
+
+        <a class="btn2" href="https://data.london.gov.uk/dataset/london-average-air-quality-levels" target="_blank">DATA SOURCE</a>
+
+        <br>
+        <br>
+
+        <h1>About these pollutants</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 style="color:#d42a2f;">PM2.5</h3>
+                <h6>
+                    <p><strong>Sources:</strong> PM2.5 is commonly considered to be particles less than 2.5 micrometres (μm) in diameter.They are also known as high risk respirable particles. The sources are mainly from combustion processes, with road transport being the dominant source in urban areas.  </p>
+                    <p><strong>Consequences:</strong> PM2.5 can reach the deepest (alveolar) portions of the lungs where gas exchange occurs between the air and the blood stream. Long term exposure to PM2.5 can cause premature death, especially related to heart disease, and cardiovascular effects such as heart attacks and strokes. It is also linked to reduced lung development as well as the development of chronic respiratory diseases, such as asthma, in children.</p>
+                </h6>
+            </div>
+
+            <div class="col-md-6">
+                <h3 style="color:#fd7f28;">PM10</h3>
+                <h6>
+                    <p><strong>Sources:</strong> PM10 is defined as particles which are smaller than 10 micrometres in diameter. Traditionally domestic and industrial coal combustion was the major sources of PM10. Today, in urban areas road transport is the major source, with about half coming from vehicle exhausts, particularly from diesel vehicles, and half from the wear of brakes, tyres and road surfaces.</p>
+                    <p><strong>Consequences:</strong> There have been numerous studies that associate PM10 with cardiovascular morbidity and mortality, and there would be health benefits of reducing PM10 concentrations below the current EU limit value. However, it appears that much, but not all, of the effects are due to the smaller fraction (PM2.5). </p>
+                </h6>
+            </div>
+
+
+            <div class="col-md-4">
+                <h3 style="color:#2678b2;">NO2</h3>
+                <h6>
+                    <p><strong>Sources:</strong> Oxides of Nitrogen are formed during combustion, mainly from road vehicles. Domestic and workplace gas use is also a major contributor</p>
+                <p><strong>Consequences:</strong> Exposure to NO2 can decrease lung function and a person's susceptibility to allergens and affect asthmatics. NOx can react with other pollutants to form chemicals toxic to the environment such as Ozone and acid rain.</p>
+                </h6>
+            </div>
+
+            <div class="col-md-4">
+                <h3 style="color:#e9d030;">SO2</h3>
+                <h6>
+                    <p><strong>Sources:</strong> Sulphur Dioxide is produced by the combustion of fuels which contain sulphur (mainly coal and oil). A major source is coal burning power stations. </p>
+                    <p><strong>Consequences:</strong> SO2 has an irritant effect on the lining of the airways (nose, throat and lungs). People suffering from asthma are also more sensitive. SO2 is oxidised in the atmosphere to form acid rain which can damage freshwater environments, soils and vegetation.</p>
+                </h6>
+            </div>
+
+            <div class="col-md-4">
+                <h3 style="color:#339e34;">Ozone</h3>
+                <h6>
+                    <p><strong>Sources:</strong> Ozone is a secondary pollutant, produced when NOx and other volatile organic compounds react in the presence of sunlight.</p>
+                    <p><strong>Consequences:</strong> Long term exposure to ozone increases respiratory mortality and possibly also cardiorespiratory mortality. Short term exposure to ozone has been associated with cardiovascular and respiratory mortality. </p>
+                </h6>
+            </div>
+        </div>
+
+
+        <br>
+
+        <h1>Particulate Matter 2.5</h1>
+
+        <div class='tableauPlaceholder' id='viz1525372877589' style='position: relative'>
+            <noscript>
+                <a href='#'><img alt='PM2.5 deaths ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonPM2_5v2&#47;PM2_5deaths&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='LondonPM2_5v2&#47;PM2_5deaths' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonPM2_5v2&#47;PM2_5deaths&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='filter' value='publish=yes' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1525372877589');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '827px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+        <h6>This map has been created to show the mortality burden of 2010 levels of PM2.5.
+The mortality rate is calculated per 100,000 (Attributable Deaths/Borough Population* 100,000) as this is more representative of the population size.
+
+    <li>Lowest Estimated Deaths: City of London: Population = 5,200. Deaths= 4.</li>
+    <li>Highest Estimated Deaths: Bromley: Population = 199,800. Deaths= 182.</li>
+
+       It is important to note that these measurements come from a study carried out by researchers from Kings College London, and that these results are estimates. Their main findings state that an estimated 52,630 life-years (equivalent to 3,537 deaths at typical ages) were associated with PM2.5. Read the full report <a href="https://www.kcl.ac.uk/lsm/research/divisions/aes/research/ERG/research-projects/HIAinLondonKingsReport14072015final.pdf" target="_blank">here</a></h6>.
+
+        <a class="btn2" href="https://data.london.gov.uk/dataset/understanding-health-impacts-of-air-pollution-in-london-" target="_blank">DATA SOURCE</a>
+
+        <br>
+        <br>
+
+        <h1>Nitrogen Dioxide</h1>
+
+        <div class='tableauPlaceholder' id='viz1523816754041' style='position: relative'>
+            <noscript>
+                <a href='#'><img alt='London: NO2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonNO2&#47;LondonNO2&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='LondonNO2&#47;LondonNO2' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonNO2&#47;LondonNO2&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1523816754041');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '900px';
+                vizElement.style.height = '727px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '900px';
+                vizElement.style.height = '727px';
+            } else {
+                vizElement.style.width = '900px';
+                vizElement.style.height = '727px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+        <h6>This is a heat map of London, showcasing an average 2010 nitrogen dioxide level (measured in micrograms per cubic meter) for each borough. The data was taken from the London Air Quality Network website which monitors pollutants at different sites across London. Hammersmith &amp; Fulham, Merton and Southwark sites did not contain data for the specified time period therefore were left out for this visual. An annual measurement was used as it gives a good indication of average pollutant level and long-term exposure. From the map, Inner London boroughs are shaded darker compared to the Outer ones, meaning boroughs surrounding the City generally have a higher NO2 level. Lambeth having the highest NO2 levels during 2010, at: 77 µg/m3 and Barking &amp; Dagenham with the least at 26.25 µg/m3.</h6>
+
+        <div class='tableauPlaceholder' id='viz1523816864036' style='position: relative'>
+            <noscript>
+                <a href='#'><img alt='London: NO2 Mortality ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonNO2Mortality&#47;LondonNO2Mortality&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='LondonNO2Mortality&#47;LondonNO2Mortality' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lo&#47;LondonNO2Mortality&#47;LondonNO2Mortality&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1523816864036');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '900px';
+            vizElement.style.height = '427px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+        <h6>This graph, again plots borough population with mortality (this time the mortality burden of 2010 levels of Nitrogen Dioxide) as a traditional bar graph. The blue bar represents the estimated population of each borough, and the black dots show the number of deaths associated with NO2. Another finding from the same King’s study previously mentioned, found that an estimated 88,113 life-years (equivalent to 5,879 deaths at typical ages) were lost due to long term exposure to NO2. Again, an expected correlation between population and mortality can be seen. 
+            <li>Lowest Estimated Deaths: City of London: Population = 5,200. Deaths= 8. </li>
+            <li>Highest Estimated Deaths: Barnet: Population = 208,300. Deaths= 279. </li> </h6>
+
+        <a class="btn2" href="https://www.londonair.org.uk/london/asp/datadownload.asp" target="_blank">DATA SOURCE</a>
+
+
+
+        <script type="text/javascript">
+            //Menu toggle-button 
+
+            $(document).ready(function () {
+                $(".menu-icon").on("click", function () {
+                    $("nav ul").toggleClass("showing");
+                });
+
+            });
+
+            //fixed scrolling effect
+
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                } else {
+                    $('nav').removeClass('black');
+                }
+
+            })
+
+            //SMOOTH SCROLL
+
+            $(function () {
+                $('a[href*=#]:not([href=#])').click(function () {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>

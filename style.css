@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    padding: 10em 1em 0em;
+    width: 100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+#icon {
+    max-width: 200px;
+    margin: 1% auto;
+}
+
+#icon:hover {
+    color: black;
+    border: solid black 3px;
+    opacity: 0.5;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url("img/london.jpg") no-repeat center center fixed;
+    display: table;
+    background-size: cover;
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.bgTemp {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url("img/weather.jpg") no-repeat center center fixed;
+    display: table;
+    background-size: cover;
+}
+
+.bgPol {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url("img/pollution.jpg") no-repeat center center fixed;
+    display: table;
+    background-size: cover;
+}
+
+.bgDiv {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url("img/people.jpg") no-repeat center center fixed;
+    display: table;
+    background-size: cover;
+}
+
+.inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content {
+    margin: auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-shadow: 0px 0px 80px #000;
+    text-transform: uppercase;
+    font-size: 700%;
+}
+
+.welcome {
+    margin: 0 auto;
+    padding: 4em 2em 4em;
+    max-width: 1000px;
+    line-height: 1.5em;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.16);
+}
+
+.otherVis {
+    margin: 0 auto;
+    padding: 2em 2em 4em;
+    max-width: 1050px;
+    line-height: 1.5em;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.16);
+}
+
+.otherVis h6 {
+    font-family: 'Helvetica', sans-serif;
+    padding: 1em 4em 3em;
+    color: #383838;
+    text-align: left;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0%;
+    text-align: center;
+    text-shadow: 1px 1px 5px #000;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font size: 20px;
+}
+
+.menu-icon {
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.btn {
+    border-radius: 9px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 135%;
+    padding: 10px 20px;
+    border: solid white 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: skyblue;
+    border: solid skyblue 3px;
+}
+
+.btn1 {
+    font-size: 60px;
+    color: white;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.btn1:hover {
+    color: skyblue;
+}
+
+.btn2 {
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 90%;
+    padding: 7px 6px;
+    border: solid black 3px;
+}
+
+.btn2:hover {
+    color: skyblue;
+    border: solid skyblue 3px;
+}
+
+@media(max-width: 580px) {
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+    nav.black ul {
+        background: #000;
+    }
+    .showing {
+        max-height: 20em;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .content h1 {
+        font-size: 250%
+    }
+    .btn {
+        font-size: 110%;
+        padding: 7px 15px;
+    }
+}
